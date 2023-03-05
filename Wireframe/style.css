@@ -3,7 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
 /* Mobile (first) : Anything smaller than 600px */
+
+.flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.dev {
+  border: 1px solid red;
+}
+
+.box {
+  border: 1px solid grey;
+}
 
 .header-container {
   display: flex;
@@ -47,19 +77,159 @@
 .listing-card {
   display: flex;
   margin: 1em;
+  padding-top: 0.25em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid grey;
 }
 
 .listing-info {
+  margin-left: 0.5em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
 }
 
 #listing-price {
-  grid-row: 1/3;
+  grid-row: 2/4;
   grid-column: 4;
   display: flex;
   justify-content: center;
+}
+
+#listing-name {
+  grid-column: 1/3;
+}
+
+#listing-rating {
+  grid-column: 3/5;
+}
+
+#listing-desc {
+  grid-row: 2;
+  grid-column: 1/4;
+}
+
+#attr {
+  padding: 0.25em;
+}
+
+.listing-attributes {
+  grid-row: 3;
+  grid-column: 1/4;
+}
+
+#search-map {
+  height: 30vh;
+  max-width: 100%;
+}
+
+.filters-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border: 1px solid grey;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+#filter-text1 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#filter-text2 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.search-listing {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  margin-bottom: 1.5em;
+}
+
+.search-listing-info {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 15vh;
+}
+
+.location-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
   align-items: center;
+}
+
+.map-container {
+  width: 100%;
+  height: 25vh;
+  background-image: url("./images/placeholder-map.png");
+  background-size: cover;
+  background-repeat: none;
+}
+
+.image-gallery {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+}
+
+.gallery__image {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* animation is not finalized */
+.animate {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.attributes-container {
+  width: 100%;
+  height: 10vh;
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.description {
+  width: 100%;
+  height: 17vh;
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 0 1em;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70%;
 }
 
 /* Tablet : 600px - 960px */
