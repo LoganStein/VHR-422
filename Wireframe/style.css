@@ -49,7 +49,7 @@ a {
   background-image: url("https://picsum.photos/425/190");
   background-repeat: none;
   background-size: cover;
-  height: 191px;
+  height: 20vh;
   display: flex;
   align-items: center;
 }
@@ -110,6 +110,10 @@ a {
   grid-column: 1/4;
 }
 
+#search-desc {
+  display: none;
+}
+
 #attr {
   padding: 0.25em;
 }
@@ -163,6 +167,7 @@ a {
   justify-content: space-between;
   padding: 1em;
   align-items: center;
+  border-top: 1px solid grey;
 }
 
 .map-container {
@@ -184,7 +189,7 @@ a {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 25vh;
+  height: 100%;
 }
 
 @keyframes slide {
@@ -232,10 +237,208 @@ a {
   height: 70%;
 }
 
+.suggested-filters {
+  display: none;
+}
+
+#img_1 {
+  background: url("images/placeholder-map.png");
+  background-size: cover;
+}
+#img_2 {
+  background: url("https://picsum.photos/400");
+  background-size: cover;
+}
+#img_3 {
+  background: url("images/placeholder-map.png");
+  background-size: cover;
+}
+#img_4 {
+  background: url("https://picsum.photos/400");
+  background-size: cover;
+}
+.nearby-container {
+  display: none;
+}
+
+.search-attributes {
+  display: none;
+}
+
 /* Tablet : 600px - 960px */
 @media only screen and (min-width: 600px) and (max-width: 960px) {
-  body {
-    background-color: blue;
+  .suggested-filters {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 30vh;
+    gap: 15px;
+    margin-top: 1em;
+  }
+  #filter1 {
+    grid-column: 1;
+    grid-row: 1/3;
+    height: 100%;
+    background: url("https://picsum.photos/400");
+    background-size: cover;
+  }
+  #filter2 {
+    grid-column: 2;
+    grid-row: 1;
+    height: 100%;
+    background: url("https://picsum.photos/400");
+    background-size: cover;
+  }
+  #filter3 {
+    grid-column: 2;
+    grid-row: 2;
+    height: 100%;
+    background: url("https://picsum.photos/400");
+    background-size: cover;
+  }
+  #filter4 {
+    grid-column: 3;
+    grid-row: 1;
+    height: 100%;
+    background: url("https://picsum.photos/400");
+    background-size: cover;
+  }
+  #filter5 {
+    grid-column: 3;
+    grid-row: 2;
+    height: 100%;
+    background: url("https://picsum.photos/400");
+    background-size: cover;
+  }
+  .search-hero {
+    height: 35vh;
+    background: url("https://picsum.photos/820/450");
+  }
+  .search-container {
+    height: 5vh;
+  }
+  .search-search {
+    width: 200px;
+    padding: 0.25em;
+  }
+  .search-guests {
+    width: 75px;
+    padding: 0.25em;
+  }
+  #listing-name {
+    grid-column: 1;
+  }
+  #search-rating {
+    grid-column: 3/4;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  #listing-rating {
+    grid-column: 2/3;
+    grid-row: 1;
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+  }
+  #hacky-bs {
+    align-items: center;
+  }
+  #img_1 {
+    background-image: url("https://picsum.photos/820/500");
+  }
+  #img_2 {
+    background-image: url("https://picsum.photos/820/501");
+  }
+  #img_3 {
+    background-image: url("https://picsum.photos/820/495");
+  }
+  #img_4 {
+    background-image: url("https://picsum.photos/820/503");
+  }
+  .info-wrapper {
+    display: flex;
+    height: 20vh;
+  }
+  .attributes-container {
+    width: 100%;
+    height: 50%;
+    margin-top: 0;
+  }
+  .description {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons-container {
+    flex-direction: row;
+    height: 30px;
+    margin-top: 2em;
+  }
+  .attr-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    border: 1px solid grey;
+    margin-top: 2em;
+  }
+  .nearby-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 1.5em;
+  }
+  #nearby-title {
+    grid-column: 1/3;
+  }
+  .search-listing {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    /* padding-top: 0.25em; */
+    /* padding-bottom: 1.5em; */
+    border-bottom: 1px solid grey;
+  }
+  .search-listing img {
+    width: 35%;
+  }
+  .search-listing-info {
+    margin-left: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    width: 100%;
+  }
+  .search-name {
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+  }
+  .room-info {
+    display: none;
+  }
+  .search-price {
+    grid-column: 4;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-attributes {
+    display: flex;
+    grid-row: 3;
+    grid-column: 1/3;
+  }
+  #search-desc {
+    display: block;
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+  .image-gallery {
+    height: 40vh;
   }
 }
 
