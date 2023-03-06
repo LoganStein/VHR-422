@@ -11,10 +11,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="search-desktop.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Search Results</title>
   </head>
   <body>
+    <div class="ad-block box">Ad</div>
+
     <div class="header-container">
       <span><a href="index.html">Home</a></span>
       <span>Sign In</span>
@@ -49,97 +52,150 @@
       <label class="flex-space-evenly" id="filter-text2" for=""
         ><input class="search-guests" id="filter-br" type="text" />Guests</label
       >
+      <div id="price-filter">
+        <label for="price">Price:</label>
+        <select name="price" id="price">
+          <option value="L2H">Low to High</option>
+          <option value="H2L">High to Low</option>
+        </select>
+      </div>
+
+      <div class="min-max">
+        <input placeholder="Min" />
+        <input placeholder="Max" />
+      </div>
+
+      <div class="ratings-filter">
+        <span id="listing-rating" class="flex-center"
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i>& Up</span
+        >
+        <span id="listing-rating" class="flex-center"
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-regular fa-star"></i>& Up</span
+        >
+        <span id="listing-rating" class="flex-center"
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i
+          ><i class="fa-regular fa-star"></i>& Up</span
+        >
+        <span id="listing-rating" class="flex-center"
+          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+          ><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i
+          ><i class="fa-regular fa-star"></i>& Up</span
+        >
+        <span id="listing-rating" class="flex-center"
+          ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i
+          ><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i
+          ><i class="fa-regular fa-star"></i>& Up</span
+        >
+      </div>
     </div>
 
-    <a href="listing.html">
-      <div class="search-listing">
-        <img src="https://picsum.photos/393/250" alt="Listing Feature Image" />
-        <div class="search-listing-info">
-          <h2 class="search-name">Name of Location</h2>
-          <div class="room-info">
-            <span>3 Guests</span>
-            <span>2 Rooms</span>
-            <span>1 Bathroom</span>
-          </div>
-          <span id="search-desc" class="flex-v-center"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            consequuntur cupiditate voluptatum, iure dolore eos quos consectetur
-            voluptas rerum? Aperiam amet voluptatibus, sed tenetur et repellat
-            molestias ullam nisi ut.</span
-          >
-          <span id="search-rating" class=""
-            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-            ><i class="fa-solid fa-star"></i
-          ></span>
-          <span class="search-price">price / night</span>
-          <div class="search-attributes flex-v-center">
-            <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
-            <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
-            <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
-          </div>
-        </div>
-      </div>
-    </a>
-    <a href="listing.html">
-      <div class="search-listing">
-        <img src="https://picsum.photos/393/250" alt="Listing Feature Image" />
-        <div class="search-listing-info">
-          <h2 class="search-name">Name of Location</h2>
-          <div class="room-info">
-            <span>3 Guests</span>
-            <span>2 Rooms</span>
-            <span>1 Bathroom</span>
-          </div>
-          <span id="search-desc" class="flex-v-center"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            consequuntur cupiditate voluptatum, iure dolore eos quos consectetur
-            voluptas rerum? Aperiam amet voluptatibus, sed tenetur et repellat
-            molestias ullam nisi ut.</span
-          >
-          <span id="search-rating" class=""
-            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-            ><i class="fa-solid fa-star"></i
-          ></span>
-          <span class="search-price">price / night</span>
-          <div class="search-attributes flex-v-center">
-            <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
-            <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
-            <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
+    <div class="results-container">
+      <a href="listing.html">
+        <div class="search-listing">
+          <img
+            src="https://picsum.photos/393/250"
+            alt="Listing Feature Image"
+          />
+          <div class="search-listing-info">
+            <h2 class="search-name">Name of Location</h2>
+            <div class="room-info">
+              <span>3 Guests</span>
+              <span>2 Rooms</span>
+              <span>1 Bathroom</span>
+            </div>
+            <span id="search-desc" class="flex-v-center"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              consequuntur cupiditate voluptatum, iure dolore eos quos
+              consectetur voluptas rerum? Aperiam amet voluptatibus, sed tenetur
+              et repellat molestias ullam nisi ut.</span
+            >
+            <span id="search-rating" class=""
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i
+            ></span>
+            <span class="search-price">price / night</span>
+            <div class="search-attributes flex-v-center">
+              <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
+              <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
+              <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
-    <a href="listing.html">
-      <div class="search-listing">
-        <img src="https://picsum.photos/393/250" alt="Listing Feature Image" />
-        <div class="search-listing-info">
-          <h2 class="search-name">Name of Location</h2>
-          <div class="room-info">
-            <span>3 Guests</span>
-            <span>2 Rooms</span>
-            <span>1 Bathroom</span>
-          </div>
-          <span id="search-desc" class="flex-v-center"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            consequuntur cupiditate voluptatum, iure dolore eos quos consectetur
-            voluptas rerum? Aperiam amet voluptatibus, sed tenetur et repellat
-            molestias ullam nisi ut.</span
-          >
-          <span id="search-rating" class=""
-            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-            ><i class="fa-solid fa-star"></i
-          ></span>
-          <span class="search-price">price / night</span>
-          <div class="search-attributes flex-v-center">
-            <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
-            <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
-            <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
+      </a>
+
+      <a href="listing.html">
+        <div class="search-listing">
+          <img
+            src="https://picsum.photos/393/250"
+            alt="Listing Feature Image"
+          />
+          <div class="search-listing-info">
+            <h2 class="search-name">Name of Location</h2>
+            <div class="room-info">
+              <span>3 Guests</span>
+              <span>2 Rooms</span>
+              <span>1 Bathroom</span>
+            </div>
+            <span id="search-desc" class="flex-v-center"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              consequuntur cupiditate voluptatum, iure dolore eos quos
+              consectetur voluptas rerum? Aperiam amet voluptatibus, sed tenetur
+              et repellat molestias ullam nisi ut.</span
+            >
+            <span id="search-rating" class=""
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i
+            ></span>
+            <span class="search-price">price / night</span>
+            <div class="search-attributes flex-v-center">
+              <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
+              <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
+              <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
+
+      <a href="listing.html">
+        <div class="search-listing">
+          <img
+            src="https://picsum.photos/393/250"
+            alt="Listing Feature Image"
+          />
+          <div class="search-listing-info">
+            <h2 class="search-name">Name of Location</h2>
+            <div class="room-info">
+              <span>3 Guests</span>
+              <span>2 Rooms</span>
+              <span>1 Bathroom</span>
+            </div>
+            <span id="search-desc" class="flex-v-center"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              consequuntur cupiditate voluptatum, iure dolore eos quos
+              consectetur voluptas rerum? Aperiam amet voluptatibus, sed tenetur
+              et repellat molestias ullam nisi ut.</span
+            >
+            <span id="search-rating" class=""
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i
+            ></span>
+            <span class="search-price">price / night</span>
+            <div class="search-attributes flex-v-center">
+              <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
+              <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
+              <span id="attr"><i class="fa-solid fa-check"></i> Pool</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
   </body>
 </html>
