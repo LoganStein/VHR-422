@@ -17,9 +17,7 @@
   <body>
     <div class="header-container">
       <span
-        ><a href="search.html"
-          ></i
-          ><i class="fa-solid fa-arrow-left"></i></a
+        ><a href="search.html"><i class="fa-solid fa-arrow-left"></i></a
       ></span>
       <span>Sign In</span>
     </div>
@@ -27,10 +25,10 @@
     <div class="location-title">
       <h2>Location Name</h2>
       <span id="listing-rating" class=""
-            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-            ><i class="fa-solid fa-star"></i
-          ></span>
+        ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+        ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+        ><i class="fa-solid fa-star"></i
+      ></span>
     </div>
     <div class="image-gallery">
       <div class="gallery__image" id="img_1"></div>
@@ -39,48 +37,77 @@
       <div class="gallery__image" id="img_4"></div>
     </div>
     <div class="info-wrapper">
-    <div class="attr-wrapper">
-
-      <div class="attributes-container">
-        <span class="flex-center"><i class="fa-solid fa-check"></i> Pool</span>
-        <span class="flex-center"><i class="fa-solid fa-check"></i> Pets</span>
-        <span class="flex-center"><i class="fa-solid fa-check"></i> Kids</span>
-        <span class="flex-center"><i class="fa-solid fa-check"></i> Smoking</span>
-        <span class="flex-center"><i class="fa-solid fa-check"></i> Some</span>
-        <span class="flex-center"><i class="fa-solid fa-check"></i> Thing</span>
-        <span class="flex-center"><i class="fa-solid fa-check"></i> Roof top</span>
-        <span class="flex-center"><i class="fa-solid fa-check"></i> Doorman</span>
+      <div class="attr-wrapper">
+        <div class="attributes-container">
+          <span class="flex-center"
+            ><i class="fa-solid fa-check"></i> Pool</span
+          >
+          <span class="flex-center"
+            ><i class="fa-solid fa-check"></i> Pets</span
+          >
+          <span class="flex-center"
+            ><i class="fa-solid fa-check"></i> Kids</span
+          >
+          <span class="flex-center"
+            ><i class="fa-solid fa-check"></i> Smoking</span
+          >
+          <span class="flex-center"
+            ><i class="fa-solid fa-check"></i> Some</span
+          >
+          <span class="flex-center"
+            ><i class="fa-solid fa-check"></i> Thing</span
+          >
+          <span class="flex-center"
+            ><i class="fa-solid fa-check"></i> Roof top</span
+          >
+          <span class="flex-center"
+            ><i class="fa-solid fa-check"></i> Doorman</span
+          >
+        </div>
+        <div class="nearby-container">
+          <span id="nearby-title">Nearby</span>
+          <span>Thing 1</span>
+          <span>Thing 2</span>
+          <span>Thing 3</span>
+          <span>Thing 4</span>
+          <span>Thing 5</span>
+          <span>Thing 6</span>
+        </div>
       </div>
-      <div class="nearby-container">
-        <span id="nearby-title">Nearby</span>
-        <span>Thing 1</span>
-        <span>Thing 2</span>
-        <span>Thing 3</span>
-        <span>Thing 4</span>
-        <span>Thing 5</span>
-        <span>Thing 6</span>
-      </div>
-    </div>
-
 
       <div class="description box">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam eligendi, laudantium blanditiis voluptatum iure cum perspiciatis modi. Consequuntur modi, ipsa deserunt similique ullam ad cum architecto magni dolorum nam quisquam!</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
+          eligendi, laudantium blanditiis voluptatum iure cum perspiciatis modi.
+          Consequuntur modi, ipsa deserunt similique ullam ad cum architecto
+          magni dolorum nam quisquam!
+        </p>
+        <p id="optional-desc">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          doloribus, nemo, ratione quibusdam eum voluptates illo incidunt est a
+          tenetur dignissimos iusto praesentium vero culpa eveniet ipsum
+          laboriosam quos obcaecati! Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Dolores nulla neque dolorum, alias nostrum
+          laudantium, tempora doloremque necessitatibus voluptas consequuntur
+          consectetur fuga inventore consequatur similique tenetur repudiandae
+          libero molestiae voluptatibus?
+        </p>
         <div class="buttons-container">
           <button>Contact Host</button>
           <a href="checkout.html"><button>Book Now!</button></a>
         </div>
       </div>
-    </div>
 
-    <div class="map-container bottom"></div>
+      <div id="listing-map" class="map-container"></div>
+    </div>
 
     <script>
       // not finalized
-      const imgs = document.querySelectorAll('.gallery__image');
-      for(const img of imgs){
-        img.addEventListener('click', function handleClick(event){
-          event.target.classList.add('animate');
-        })
+      const imgs = document.querySelectorAll(".gallery__image");
+      for (const img of imgs) {
+        img.addEventListener("click", function handleClick(event) {
+          event.target.classList.add("animate");
+        });
       }
     </script>
   </body>

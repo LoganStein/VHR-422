@@ -1,0 +1,32 @@
+@media only screen and (min-width: 961px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #checkout-imgs {
+    display: block !important;
+    grid-column: 1;
+    grid-row: 1;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background: url("https://picsum.photos/500/300");
+    background-size: cover;
+  }
+  .payment-section {
+    grid-column: 2;
+    grid-row: 1/4;
+  }
+  .rental-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .tos {
+    grid-column: 1/3;
+  }
+}
