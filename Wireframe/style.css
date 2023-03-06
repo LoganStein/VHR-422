@@ -265,6 +265,70 @@ a {
   display: none;
 }
 
+.rental-details,
+.price-options {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.price-addons {
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.payment-section {
+  width: 90%;
+  margin: auto;
+  padding: 1em;
+}
+
+#payment-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#payment-details input {
+  padding: 0.25em;
+}
+
+#payment-details button {
+  width: 5em;
+}
+
+#cvv,
+#exp {
+  width: 60px;
+}
+
+.payment-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+#paypal-btn {
+  margin-top: 0.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paypal-btn {
+  width: 5em;
+}
+
+.tos {
+  display: none;
+}
+
 /* Tablet : 600px - 960px */
 @media only screen and (min-width: 600px) and (max-width: 960px) {
   .suggested-filters {
@@ -439,6 +503,13 @@ a {
   }
   .image-gallery {
     height: 40vh;
+  }
+  .tos {
+    display: block;
+    width: 90%;
+    margin: auto;
+    color: grey;
+    margin-top: 1em;
   }
 }
 
