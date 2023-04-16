@@ -1,0 +1,130 @@
+.dev {
+  border: 1px solid red;
+}
+
+.feature-img {
+  width: 100%;
+  height: 90vh;
+  background: url(../Assets/images/Home-Feature.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__container {
+  padding: 2em;
+  background-color: white;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__btn {
+  background-color: #1e98d7;
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.feature__filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2em;
+  width: 85%;
+  margin: auto;
+  margin-top: 3em;
+  height: 50vh;
+}
+
+.feature__filter-main {
+  grid-row: 1/3;
+}
+
+.filterCard__container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.filterCard__container .title {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.feature__listings {
+  width: 85%;
+  margin: auto;
+  margin-top: 3em;
+}
+
+.listingCard__container {
+  display: flex;
+  height: 30vh;
+  margin-bottom: 3em;
+}
+.listingCard__container .feature__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  height: 100%;
+}
+.listingCard__container .info__container {
+  display: grid;
+  width: 70%;
+  grid-template-columns: 3fr 3fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.listingCard__container .info__container .listing__heading {
+  padding: 1em;
+  grid-column: 1/3;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+}
+.listingCard__container .info__container .listing__heading .title {
+  margin-right: 1em;
+  font-weight: bold;
+  font-size: x-large;
+}
+.listingCard__container .info__container .price__container {
+  grid-column: 3;
+  grid-row: 2;
+  font-weight: bold;
+  font-size: x-large;
+  margin: auto;
+}
+.listingCard__container .info__container .desc__container {
+  grid-column: 1/3;
+  grid-row: 2;
+  padding: 0 1em;
+}
+.listingCard__container .info__container .attributes__container {
+  grid-column: 1/3;
+  grid-row: 3;
+  width: 100%;
+}
+.listingCard__container .info__container .attributes__container .attrs {
+  display: flex;
+  margin-left: 1em;
+}
+.listingCard__container .info__container .attributes__container .attrs .attr__pair {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}/*# sourceMappingURL=home.css.map */

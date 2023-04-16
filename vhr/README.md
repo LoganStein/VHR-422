@@ -16,8 +16,6 @@ Vacation Home Rents is a semester-long project for CS422 at UIC, which aims to c
 - HTML5
 - CSS3
 - JavaScript
-- Axios (for API calls)
-- Redux (for state management)
 - React Router (for routing)
 
 ## Installation
@@ -36,6 +34,14 @@ Vacation Home Rents is a semester-long project for CS422 at UIC, which aims to c
 - Browse the listings and view detailed information about each listing.
 - Save listings to favorites for future reference.
 - Use the responsive design to access the application on desktop and mobile devices.
+
+## Project Structure
+
+Components are in `src/Components`
+
+Styling is done in scss which is compiled to css. All the scss and css is in `src/CSS`. `_variables.scss` contains variables for other scss files such as common colors and mixins for common style components.
+
+Pages are in `src/Pages`
 
 ## Credits
 

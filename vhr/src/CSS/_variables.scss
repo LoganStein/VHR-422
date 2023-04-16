@@ -1,0 +1,18 @@
+$button-color: #1e98d7;
+$home-content-width: 85%;
+
+@mixin FlexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin DivImg() {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.dev {
+  border: 1px solid red;
+}
