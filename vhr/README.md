@@ -43,6 +43,8 @@ Styling is done in scss which is compiled to css. All the scss and css is in `sr
 
 Pages are in `src/Pages`
 
+The assets used such as images are in `Assets/images` however in production these images would be pulled from a database rather than stored statically in an assets foler. The icons come from the font awesome library.
+
 ## Credits
 
 - [Vacation Home Rents](https://vacationhomerents.com)
