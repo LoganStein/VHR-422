@@ -14,7 +14,7 @@ function Attributes(props) {
   ));
 
   const negIcons = negAttrs.map((attr, index) => (
-    <div className="att__pair">
+    <div className="attr__pair">
       <FontAwesomeIcon key={index} icon={faTimes} /> {/*Render x icon*/}
       <span>{attr}</span>
     </div>

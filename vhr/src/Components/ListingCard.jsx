@@ -1,10 +1,17 @@
 import React from "react";
 import Rating from "./Rating";
 import Attributes from "./Attributes";
+import { useNavigate } from "react-router-dom";
 
 function ListingCard(props) {
+  const navigate = useNavigate();
   return (
-    <div className="listingCard__container">
+    <div
+      className="listingCard__container"
+      onClick={() => {
+        navigate("/Listing", { state: { listing: props } });
+      }}
+    >
       <div
         className="feature__img"
         style={{ backgroundImage: `url(${props.imgUrl})` }}

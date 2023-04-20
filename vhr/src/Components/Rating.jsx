@@ -7,9 +7,9 @@ function Rating(props) {
 
   for (let i = 0; i < 5; i++) {
     if (i < props.rating) {
-      stars.push(<FontAwesomeIcon icon={faStar} />);
+      stars.push(<FontAwesomeIcon key={i} icon={faStar} />);
     } else {
-      stars.push(<FontAwesomeIcon icon={farStarRegular} />);
+      stars.push(<FontAwesomeIcon key={i} icon={farStarRegular} />);
     }
   }
 

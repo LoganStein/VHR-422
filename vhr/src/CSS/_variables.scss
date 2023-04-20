@@ -17,3 +17,8 @@ $button-hover-color: #0062cc;
 .dev {
   border: 1px solid red;
 }
+
+@mixin textLight {
+  font-size: 0.75rem;
+  color: grey;
+}
