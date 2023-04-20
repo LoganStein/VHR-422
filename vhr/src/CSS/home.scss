@@ -2,7 +2,7 @@
 
 .feature-img {
   width: 100%;
-  height: 90vh;
+  height: 75vh;
   background: url(../Assets/images/Home-Feature.png);
   @include DivImg;
   @include FlexCenter;
@@ -52,7 +52,9 @@
     bottom: 0;
     left: 0;
     padding: 10px;
-    font-weight: bold;
+    font-family: "Arial Bold", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
     letter-spacing: 1px;
   }
 }
@@ -65,8 +67,9 @@
 
 .listingCard__container {
   display: flex;
-  height: 30vh;
+  height: 22vh;
   margin-bottom: 3em;
+  border: 1px solid grey;
   .feature__img {
     @include DivImg;
     width: 30%;
@@ -77,16 +80,19 @@
     width: 70%;
     grid-template-columns: 3fr 3fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
+    // TODO: match font/icon sizing
     .listing__heading {
       padding: 1em;
       grid-column: 1/3;
       grid-row: 1;
       display: flex;
       align-items: center;
+      font-size: 1.5rem;
       .title {
+        font-family: "Arial Bold", "Arial", sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
         margin-right: 1em;
-        font-weight: bold;
-        font-size: x-large;
       }
     }
     .price__container {
@@ -110,7 +116,7 @@
         display: flex;
         margin-left: 1em;
         .attr__pair {
-          // TODO: Make sizing match prototype
+          // TODO: Make sizing match prototype (icons)
           @include FlexCenter;
           margin-right: 1em;
         }

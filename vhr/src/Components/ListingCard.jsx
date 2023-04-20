@@ -4,7 +4,7 @@ import Attributes from "./Attributes";
 
 function ListingCard(props) {
   return (
-    <div className="dev listingCard__container">
+    <div className="listingCard__container">
       <div
         className="feature__img"
         style={{ backgroundImage: `url(${props.imgUrl})` }}
