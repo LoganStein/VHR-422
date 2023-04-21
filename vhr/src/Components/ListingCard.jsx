@@ -5,28 +5,29 @@ import { useNavigate } from "react-router-dom";
 
 function ListingCard(props) {
   const navigate = useNavigate();
+  const info = props.info;
   return (
     <div
       className="listingCard__container"
       onClick={() => {
-        navigate("/Listing", { state: { listing: props } });
+        navigate("/Listing", { state: { info: props } });
       }}
     >
       <div
         className="feature__img"
-        style={{ backgroundImage: `url(${props.imgUrl})` }}
+        style={{ backgroundImage: `url(${info.imgUrl})` }}
       ></div>
       <div className="info__container">
         <div className="listing__heading">
-          <span className="title">{props.title}</span>
-          <Rating rating={props.rating} />
+          <span className="title">{info.title}</span>
+          <Rating rating={info.rating} />
         </div>
         <div className="desc__container">
-          <span>{props.desc ? props.desc : "No description available"}</span>
+          <span>{info.desc ? info.desc : "No description available"}</span>
         </div>
-        <div className="price__container">${props.price}/Night</div>
+        <div className="price__container">${info.price}/Night</div>
         <div className="attributes__container">
-          <Attributes posAttr={props.posAttr} negAttr={props.negAttr} />
+          <Attributes posAttr={info.posAttr} negAttr={info.negAttr} />
         </div>
       </div>
     </div>

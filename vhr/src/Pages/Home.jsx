@@ -10,8 +10,12 @@ import petImg from "../Assets/images/Pets-Filter.jpg";
 import patioImg from "../Assets/images/Patio-Filter.jpg";
 import hotTubImg from "../Assets/images/HotTub-Filter.jpg";
 import Footer from "../Components/Footer";
+import listings from "../Assets/fakeData"; // acts like our database
 
 function Home() {
+  const getListingById = (id) => {
+    return listings.find((listing) => listing.id === id);
+  };
   return (
     <div>
       <Header />
@@ -27,33 +31,9 @@ function Home() {
       </div>
       <div className="feature__listings">
         {/* TODO: add more pics  */}
-        <ListingCard
-          imgUrl={poolImg}
-          title="Chicago Beach House"
-          rating="5"
-          desc="This is a beautiful beach house located on the cost of Lake Michigan. Located in Evanston, it is perfectly located for easy travel to downtown with the benefit of a quiet community"
-          posAttr={["Pools", "Pets", "Kids"]}
-          negAttr={["Smoking"]}
-          price={95}
-        />
-        <ListingCard
-          imgUrl={poolImg}
-          title="Tuscan Villa"
-          rating="4"
-          desc="This is a beautiful beach house located on the cost of Lake Michigan. Located in Evanston, it is perfectly located for easy travel to downtown with the benefit of a quiet community"
-          posAttr={["Pools", "Pets", "Kids"]}
-          negAttr={["Smoking"]}
-          price={200}
-        />
-        <ListingCard
-          imgUrl={poolImg}
-          title="French Chateau"
-          rating="3"
-          desc="This is a beautiful beach house located on the cost of Lake Michigan. Located in Evanston, it is perfectly located for easy travel to downtown with the benefit of a quiet community"
-          posAttr={["Pools", "Pets", "Kids"]}
-          negAttr={["Smoking"]}
-          price={150}
-        />
+        <ListingCard info={getListingById(1)} />
+        <ListingCard imgUrl={poolImg} info={getListingById(2)} />
+        <ListingCard imgUrl={poolImg} info={getListingById(3)} />
       </div>
 
       <Footer />

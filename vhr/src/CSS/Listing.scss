@@ -1,0 +1,47 @@
+@import "_variables";
+
+.Listing__title-rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  .rating {
+    font-size: 1.5rem;
+  }
+  padding: 0 1.5em;
+  h1 {
+    font-family: "Arial", sans-serif;
+    color: #333333;
+    font-weight: normal;
+  }
+}
+
+.Listing__hero-imgs {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+
+.Listing__info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.3fr;
+  height: 40vh;
+}
+
+.Listing__img {
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Listing__map {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+}
+
+.Listing__attr-container {
+  border: 1px solid grey;
+}

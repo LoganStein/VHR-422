@@ -26,6 +26,7 @@ Vacation Home Rents is a semester-long project for CS422 at UIC, which aims to c
 4. Start the development server with the following command:
    `npm start`
 5. Open your web browser and go to http://localhost:3000 to access the Vacation Home Rents application.
+6. Test application on DESKTOP. Our application is not currently responsive.
 
 ## Usage
 
