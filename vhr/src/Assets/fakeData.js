@@ -1,10 +1,16 @@
 import poolImg from "./images/Pool-Filter.png";
 import cabinImg from "./images/Cabin-Filter.png";
+import homeImg from "./images/Listing-Feature.png";
+import patioImg from "./images/Patio-Filter.jpg";
+import hotTubImg from "./images/HotTub-Filter.jpg";
+import chateau from "./images/chateau.jpg";
+import villa from "./images/villa.jpg";
+
 let listings = [
   {
     id: 1,
-    imgUrl: poolImg,
-    imgs: [poolImg, cabinImg],
+    imgUrl: homeImg,
+    imgs: [homeImg, poolImg],
     title: "Chicago Beach House",
     rating: 5,
     desc: "This is a beautiful beach house located on the cost of Lake Michigan. Located in Evanston, it is perfectly located for easy travel to downtown with the benefit of a quiet community",
@@ -18,8 +24,8 @@ let listings = [
   },
   {
     id: 2,
-    imgUrl: poolImg,
-    imgs: [poolImg, poolImg],
+    imgUrl: villa,
+    imgs: [villa, patioImg],
     title: "Tuscan Villa",
     rating: 4,
     desc: "This is a beautiful Italian villa located on the Amalfi Coast.",
@@ -33,8 +39,8 @@ let listings = [
   },
   {
     id: 3,
-    imgUrl: poolImg,
-    imgs: [poolImg, poolImg],
+    imgUrl: chateau,
+    imgs: [chateau, hotTubImg],
     title: "French Chateau",
     rating: 3,
     desc: "This is a beautiful beach house located on the cost of Lake Michigan. Located in Evanston, it is perfectly located for easy travel to downtown with the benefit of a quiet community",

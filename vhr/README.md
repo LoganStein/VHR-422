@@ -48,3 +48,5 @@ The assets used such as images are in `Assets/images` however in production thes
 ## Credits
 
 - [Vacation Home Rents](https://vacationhomerents.com)
+- [Dalle2](https://openai.com/product/dall-e-2)
+- [Bing Image Creator](https://www.bing.com/images/create?FORM=GDPGLP)
