@@ -1,0 +1,49 @@
+@import "_variables";
+
+.searchResult__map-filter-container {
+  width: 100%;
+  height: 100vh; // sets height of second row
+  padding: 0 0.25em;
+  @include FlexCenter;
+  flex-direction: column;
+  .searchResult__map {
+    height: 50%;
+    max-height: 400px;
+    width: 100%;
+  }
+  .searchResult__filters {
+    height: 50%;
+    width: 100%;
+  }
+}
+
+.searchResult__container {
+  display: flex;
+  width: 100%;
+}
+
+.searchResult__results-container {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  padding: 0 1em;
+  gap: 1em;
+  grid-template-columns: min-content 3.333fr;
+  grid-template-rows: min-content auto;
+  .search__container {
+    //scopes the change to the search styles to this page
+    width: 100%;
+    max-height: 100px;
+  }
+}
+
+.ad-container {
+  width: 30vw; // sets the width of first column
+  max-width: 400px;
+}
+
+.listingCard__container {
+  margin-bottom: 0.75em;
+}

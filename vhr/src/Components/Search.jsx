@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Search() {
+  const navigate = useNavigate();
+  const [Search, setSearch] = useState("");
   return (
     <div className="search__container">
-      <input className="search__search-box" placeholder="Search"></input>
+      <input
+        onChange={(e) => {
+          setSearch(e.target.value);
+        }}
+        className="search__search-box"
+        placeholder="Search"
+      ></input>
       <div className="search__date-container">
         <label className="search__date-label" forhtml="date">
           Check in:
@@ -29,7 +38,16 @@ function Search() {
         ></input>
       </div>
       <input className="search__guest-box" placeholder="Guests"></input>
-      <button className="search__btn">Search</button>
+      <button
+        onClick={() => {
+          navigate("/Search", {
+            state: { info: { filters: [], searchTerms: Search.split(" ") } },
+          });
+        }}
+        className="search__btn"
+      >
+        Search
+      </button>
     </div>
   );
 }

@@ -10,14 +10,14 @@ import petImg from "../Assets/images/Pets-Filter.jpg";
 import patioImg from "../Assets/images/Patio-Filter.jpg";
 import hotTubImg from "../Assets/images/HotTub-Filter.jpg";
 import Footer from "../Components/Footer";
-import listings from "../Assets/fakeData"; // acts like our database
+import { listings } from "../Assets/fakeData"; // acts like our database
 
 function Home() {
   const getListingById = (id) => {
     return listings.find((listing) => listing.id === id);
   };
   return (
-    <div>
+    <div className="home__container">
       <Header />
       <Hero />
       <div className="feature__filters">
@@ -30,7 +30,6 @@ function Home() {
         <FilterCard title="Hot Tubs" imgUrl={hotTubImg} />
       </div>
       <div className="feature__listings">
-        {/* TODO: add more pics  */}
         <ListingCard info={getListingById(1)} />
         <ListingCard imgUrl={poolImg} info={getListingById(2)} />
         <ListingCard imgUrl={poolImg} info={getListingById(3)} />
