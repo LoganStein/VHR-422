@@ -13,7 +13,7 @@ function SearchResults() {
   const [filters, setfilters] = useState(
     info.filters.map((filter) => filter.toLowerCase())
   );
-  console.log(filters);
+  // console.log(filters);
 
   // handle checkbox filter changes
   const handleFilterChange = (e) => {
@@ -28,7 +28,9 @@ function SearchResults() {
   // If search terms aren't provided create an empty array
   let searchTerms = info.searchTerms
     ? info.searchTerms.map((term) => term.toLowerCase())
-    : [];
+    : [""];
+
+  console.log(searchTerms);
   const results = listings
     .filter((listing) => {
       // Check if listing tags match any search terms

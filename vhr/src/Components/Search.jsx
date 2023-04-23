@@ -5,7 +5,15 @@ function Search() {
   const navigate = useNavigate();
   const [Search, setSearch] = useState("");
   return (
-    <div className="search__container">
+    <form
+      className="search__container"
+      onSubmit={(e) => {
+        e.preventDefault();
+        navigate("/Search", {
+          state: { info: { filters: [], searchTerms: Search.split(" ") } },
+        });
+      }}
+    >
       <input
         onChange={(e) => {
           setSearch(e.target.value);
@@ -38,17 +46,8 @@ function Search() {
         ></input>
       </div>
       <input className="search__guest-box" placeholder="Guests"></input>
-      <button
-        onClick={() => {
-          navigate("/Search", {
-            state: { info: { filters: [], searchTerms: Search.split(" ") } },
-          });
-        }}
-        className="search__btn"
-      >
-        Search
-      </button>
-    </div>
+      <button className="search__btn">Search</button>
+    </form>
   );
 }
 
