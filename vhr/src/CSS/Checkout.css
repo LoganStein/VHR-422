@@ -9,7 +9,6 @@
 
 .Checkout__imgs {
   height: 12vw;
-  width: 40%;
   display: flex;
 }
 
@@ -18,6 +17,52 @@
   justify-content: space-between;
   align-items: start;
   margin: 4em 7em;
+}
+.Checkout__container .imgs-addons {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.Checkout__container .imgs-addons span {
+  margin-top: 5em;
+  margin-bottom: 1em;
+}
+.Checkout__container .imgs-addons label {
+  margin-right: 1em;
+}
+.Checkout__container .imgs-addons .total {
+  width: 40%;
+  margin-top: 2em;
+}
+.Checkout__container .imgs-addons .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Checkout__container .imgs-addons .row span {
+  padding: 0;
+  margin: 0;
+}
+.Checkout__container .imgs-addons .total-row {
+  border-top: 1px solid grey;
+}
+
+.tos-container {
+  margin: 0 7em;
+  font-size: 0.75rem;
+  color: grey;
+  font-size: 0.6rem;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  font-size: 2rem;
+  justify-content: space-evenly;
+  color: grey;
 }
 
 .Checkout__img {
@@ -54,7 +99,7 @@
 .Checkout__form input,
 .Checkout__form select {
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 2em;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;

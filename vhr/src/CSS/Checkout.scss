@@ -4,7 +4,7 @@ $side-margin: 7em;
 
 .Checkout__imgs {
   height: 12vw;
-  width: 40%;
+  // width: 40%;
   display: flex;
   //   margin: 4em 0 0 $side-margin;
 }
@@ -14,6 +14,49 @@ $side-margin: 7em;
   justify-content: space-between;
   align-items: start;
   margin: 4em $side-margin;
+  .imgs-addons {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    span {
+      margin-top: 5em;
+      margin-bottom: 1em;
+    }
+    label {
+      margin-right: 1em;
+    }
+    .total {
+      width: 40%;
+      margin-top: 2em;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .total-row {
+      border-top: 1px solid grey;
+    }
+  }
+}
+
+.tos-container {
+  margin: 0 $side-margin;
+  @include textLight;
+  font-size: 0.6rem;
+}
+
+.card-icons {
+  @include FlexCenter;
+  width: 50%;
+  margin: auto;
+  font-size: 2rem;
+  justify-content: space-evenly;
+  color: grey;
 }
 
 .Checkout__img {
@@ -47,7 +90,7 @@ $side-margin: 7em;
 .Checkout__form input,
 .Checkout__form select {
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 2em;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
