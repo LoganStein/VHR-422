@@ -4,6 +4,8 @@ Vacation Home Rents is a semester-long project for CS422 at UIC, which aims to c
 
 ## Features
 
+Optimized for Desktop. Please only test the website on a desktop.
+
 - Search and filter vacation rental listings from popular websites like Airbnb and VRBO.
 - View detailed information about each listing, including property details, pricing, and amenities.
 - Designed for seamless user experience on desktop devices.
