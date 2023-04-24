@@ -2,6 +2,11 @@
   border: 1px solid red;
 }
 
+.textLight {
+  font-size: 0.75rem;
+  color: grey;
+}
+
 .Listing__title-rating-container {
   display: flex;
   align-items: center;

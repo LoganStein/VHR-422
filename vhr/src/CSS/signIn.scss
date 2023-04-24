@@ -1,0 +1,101 @@
+@import "_variables";
+a {
+  text-decoration: none;
+  color: $button-color;
+}
+
+.signIn__exit {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1.5em;
+  margin-top: 1.5em;
+}
+
+.signIn__container {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  width: 40%;
+  height: 35vw;
+  min-height: 450px;
+  transform: translate(-50%, -50%);
+  @include FlexCenter;
+  flex-direction: column;
+  background: white;
+  border-radius: 5px;
+  .signIn__header-container {
+    @include FlexCenter;
+    flex-direction: column;
+    margin-bottom: 1em;
+    .signIn__title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+    .signIn__subtitle {
+      margin-bottom: 1.5em;
+    }
+  }
+  .signIn__form-container {
+    @include FlexCenter;
+    flex-direction: column;
+    width: 70%;
+    .label-input {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+    label {
+      @include textLight;
+      //   font-weight: bold;
+      font-size: 1rem;
+      color: rgb(165, 165, 165);
+      margin-bottom: 0.75em;
+    }
+
+    input {
+      padding: 1em 1em;
+      font-size: 1rem;
+      margin-bottom: 1.5em;
+    }
+
+    button {
+      background-color: $button-color;
+      &:hover {
+        background-color: $button-hover-color;
+      }
+      padding: 0.5em 1em;
+      color: white;
+      width: 90%;
+      letter-spacing: 1px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .signIn__remember-pass {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1em;
+      label {
+        font-size: 0.75rem;
+        font-weight: normal;
+        margin: 0 0.5em;
+      }
+      input {
+        margin: 0;
+      }
+      a {
+        font-size: 0.75rem;
+      }
+      .signIn__remember-pair {
+        @include FlexCenter;
+      }
+    }
+  }
+}

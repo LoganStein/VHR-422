@@ -2,6 +2,11 @@
   border: 1px solid red;
 }
 
+.textLight {
+  font-size: 0.75rem;
+  color: grey;
+}
+
 .feature-img {
   width: 100%;
   height: 75vh;
