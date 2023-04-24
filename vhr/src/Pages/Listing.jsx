@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Components/Header";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Rating from "../Components/Rating";
 import "../CSS/Listing.css";
 import Attributes from "../Components/Attributes";
 import map from "../Assets/images/map.png";
+import Contact from "../Components/Contact";
 
 function Listing() {
   const location = useLocation();
   const listing = location.state.info.info;
+  const [ShowContact, setShowContact] = useState(false);
   console.log(listing);
   const longDesc = listing.longDesc;
   const nearby = listing.nearby || [];
   const imgs = listing.imgs || [];
+  const navigate = useNavigate();
 
   const nearEl = nearby.map((near) => <span>{near}</span>);
   const imgEl = imgs
@@ -46,11 +49,22 @@ function Listing() {
           {nearEl}
         </div>
         <div className="Listing__desc-container">
-          <span>{longDesc}</span>
-          <button>Book Now</button>
-          <button>Contact Host</button>
+          <span dangerouslySetInnerHTML={{ __html: longDesc }}></span>
+          <div>
+            <button
+              onClick={() => {
+                navigate("/Checkout", { state: listing });
+              }}
+            >
+              Book Now!
+            </button>
+            <button id="contact" onClick={() => setShowContact(true)}>
+              Contact Host
+            </button>
+          </div>
         </div>
       </div>
+      {ShowContact ? <Contact setShowContact={setShowContact} /> : <></>}
     </div>
   );
 }

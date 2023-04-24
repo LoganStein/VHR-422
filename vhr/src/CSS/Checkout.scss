@@ -1,0 +1,83 @@
+@import "_variables";
+
+$side-margin: 7em;
+
+.Checkout__imgs {
+  height: 12vw;
+  width: 40%;
+  display: flex;
+  //   margin: 4em 0 0 $side-margin;
+}
+
+.Checkout__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 4em $side-margin;
+}
+
+.Checkout__img {
+  width: 50%;
+  height: 100%;
+  @include DivImg;
+}
+
+.Checkout__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  float: right;
+  //   margin-right: $side-margin;
+}
+
+.Checkout__form label {
+  //   font-weight: bold;
+  @include textLight;
+  margin-bottom: 5px;
+}
+#year {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+.Checkout__form input,
+.Checkout__form select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.Checkout__form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Checkout__form-row div {
+  flex-basis: 30%;
+}
+
+.Cancel {
+  @include textLight;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Checkout__form button[type="submit"] {
+  background-color: $button-color;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}

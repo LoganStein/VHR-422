@@ -45,3 +45,55 @@
 .Listing__attr-container {
   border: 1px solid grey;
 }
+
+.Listing__desc-container {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  button {
+    background-color: $button-color;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 1.5em;
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+  p {
+    margin-bottom: 1em;
+  }
+  #contact {
+    border: 1px solid grey;
+    background-color: white;
+    color: black;
+  }
+}
+
+.Contact__container {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background: white;
+  border-radius: 5px;
+  width: 50%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  .Contact__exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5em 1em;
+    cursor: pointer;
+  }
+}

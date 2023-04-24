@@ -31,7 +31,7 @@ function SearchResults() {
     : [""];
 
   console.log(searchTerms);
-  const results = listings
+  let results = listings
     .filter((listing) => {
       // Check if listing tags match any search terms
       const searchMatch = listing.tags.some((tag) =>
@@ -49,6 +49,13 @@ function SearchResults() {
     .map((listing) => {
       return <ListingCard info={listing} />;
     });
+  if (results.length == 0) {
+    results = (
+      <center>
+        <h1>No Matches Found</h1>
+      </center>
+    );
+  }
   return (
     <>
       <Header />

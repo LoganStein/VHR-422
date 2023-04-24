@@ -23,6 +23,16 @@ $button-hover-color: #0062cc;
   color: grey;
 }
 
+@mixin buttons {
+  background-color: $button-color;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .textLight {
   font-size: 0.75rem;
   color: grey;
