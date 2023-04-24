@@ -27,7 +27,10 @@ function ListingCard(props) {
         </div>
         <div className="price__container">${info.price}/Night</div>
         <div className="attributes__container">
-          <Attributes posAttr={info.posAttr} negAttr={info.negAttr} />
+          <Attributes
+            posAttr={info.posAttr.slice(0, 4)}
+            negAttr={info.negAttr.slice(0, 1)}
+          />
         </div>
       </div>
     </div>

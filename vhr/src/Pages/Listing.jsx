@@ -46,7 +46,7 @@ function Listing() {
           Attributes
           <Attributes posAttr={listing.posAttr} negAttr={listing.negAttr} />
           Nearby
-          {nearEl}
+          <div className="near-container">{nearEl}</div>
         </div>
         <div className="Listing__desc-container">
           <span dangerouslySetInnerHTML={{ __html: longDesc }}></span>

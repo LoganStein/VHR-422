@@ -44,6 +44,28 @@
 
 .Listing__attr-container {
   border: 1px solid grey;
+  padding: 0.5em;
+  .attrs {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    flex-wrap: wrap;
+    .attr__pair {
+      margin: 0 0.25em 0.5em;
+    }
+  }
+  .near-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    flex-wrap: wrap;
+    span {
+      margin: 0.5em 1em;
+    }
+  }
 }
 
 .Listing__desc-container {
@@ -80,15 +102,45 @@
   top: 50%;
   bottom: 50%;
   left: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, 20%);
   background: white;
   border-radius: 5px;
   width: 50%;
-  height: 20vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  border: 1px solid grey;
+  textarea {
+    margin: auto;
+    margin-top: 0;
+    resize: none;
+    width: 90%;
+    height: 70%;
+  }
+  button {
+    position: absolute;
+    right: 5%;
+    bottom: 10px;
+    @include buttons;
+    font-size: 0.9rem;
+    padding: 0.5em 2em;
+    border: none;
+  }
+  .email-container {
+    margin-left: 2.5vw;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    span {
+      margin-right: 1em;
+      font-size: 1.05em;
+    }
+    input {
+      padding: 0.25em;
+      width: 250px;
+    }
+  }
   .Contact__exit {
     position: absolute;
     top: 0;

@@ -24,9 +24,19 @@ export let listings = [
     longDesc:
       "<div><p>Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement.</p> <p>With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake.</p> <p>The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake.</p> <p>Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!</p></div>",
     tags: ["Chicago", "pools", "kids", "pets", "ac", "kitchen", "stove"],
-    posAttr: ["pool", "kids", "pets"],
+    posAttr: ["pool", "kids", "pets", "wifi", "air conditioning"],
     negAttr: ["Smoking"],
-    nearby: ["Something", "And another", "Rollercoasters", "Ferris Wheel"],
+    nearby: [
+      "Downtown",
+      "Magnificent Mile",
+      "Jet Skis",
+      "Grocery Stores",
+      "Theaters",
+      "Navy Pier",
+      "Beach",
+      "Parks",
+      "Playground",
+    ],
     price: 95,
   },
   {
@@ -37,7 +47,7 @@ export let listings = [
     rating: 4,
     desc: "This is a beautiful Italian villa located on the Amalfi Coast.",
     longDesc:
-      "Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement. With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake. The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake. Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!",
+      "<div><p>Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement.</p> <p>With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake.</p> <p>The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake.</p> <p>Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!</p></div>",
     tags: ["italy", "patio/deck", "pool", "kids", "pets"],
     posAttr: ["pool", "kids", "pets"],
     negAttr: ["Smoking"],
@@ -52,7 +62,7 @@ export let listings = [
     rating: 3,
     desc: "This is a beautiful beach house located on the cost of Lake Michigan. Located in Evanston, it is perfectly located for easy travel to downtown with the benefit of a quiet community",
     longDesc:
-      "Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement. With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake. The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake. Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!",
+      "<div><p>Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement.</p> <p>With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake.</p> <p>The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake.</p> <p>Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!</p></div>",
     tags: [
       "France",
       "pools",
@@ -78,7 +88,7 @@ export let listings = [
     rating: 2,
     desc: "This is a beautiful beach house located on the cost of Lake Michigan. Located in Evanston, it is perfectly located for easy travel to downtown with the benefit of a quiet community",
     longDesc:
-      "Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement. With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake. The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake. Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!",
+      "<div><p>Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement.</p> <p>With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake.</p> <p>The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake.</p> <p>Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!</p></div>",
     tags: ["France", "kids", "pets"],
     posAttr: ["kids", "pets"],
     negAttr: ["Smoking"],
@@ -93,7 +103,7 @@ export let listings = [
     rating: 5,
     desc: "This is a beautiful beach house located on the cost of Lake Michigan. Located in Evanston, it is perfectly located for easy travel to downtown with the benefit of a quiet community",
     longDesc:
-      "Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement. With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake. The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake. Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!",
+      "<div><p>Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement.</p> <p>With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake.</p> <p>The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake.</p> <p>Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!</p></div>",
     tags: ["France", "pools", "pool", "kids", "ac"],
     posAttr: ["pool", "kids", "pets"],
     negAttr: ["Smoking"],
@@ -108,7 +118,7 @@ export let listings = [
     rating: 4,
     desc: "Escape to this beautiful beachfront house located in the heart of Santa Monica. Enjoy stunning ocean views and easy access to the beach and nearby attractions.",
     longDesc:
-      "Welcome to our beautiful beachfront house in Santa Monica! Our vacation rental offers the perfect blend of relaxation and excitement. With four spacious bedrooms, our beach house can comfortably accommodate up to eight guests. The open-plan living area features comfortable seating, a large TV, and large windows that provide stunning views of the ocean. The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the ocean. Book your stay at our beautiful beachfront house today and experience the best that Santa Monica has to offer!",
+      "<div><p>Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement.</p> <p>With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake.</p> <p>The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake.</p> <p>Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!</p></div>",
     tags: ["beach", "ocean", "kids", "pets", "ac"],
     posAttr: ["beach", "ocean", "kids", "pets"],
     negAttr: ["Smoking"],
@@ -128,7 +138,7 @@ export let listings = [
     rating: 5,
     desc: "Escape to this cozy mountain cabin located in the heart of the Rocky Mountains. Enjoy stunning views and easy access to nearby hiking trails and ski resorts.",
     longDesc:
-      "Welcome to our cozy mountain cabin in the heart of the Rocky Mountains! Our vacation rental offers the perfect blend of relaxation and adventure. With two bedrooms and a loft, our cabin can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the mountains. The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the mountains. Book your stay at our cozy mountain cabin today and experience the best that the Rocky Mountains have to offer!",
+      "<div><p>Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement.</p> <p>With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake.</p> <p>The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake.</p> <p>Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!</p></div>",
     tags: ["mountains", "hiking", "skiing", "kids", "pets"],
     posAttr: ["mountains", "hiking", "skiing", "kids", "pets"],
     negAttr: ["Smoking"],
@@ -148,7 +158,7 @@ export let listings = [
     rating: 3,
     desc: "Experience luxury living in the heart of the city. Our apartment offers stunning views and easy access to nearby attractions.",
     longDesc:
-      "Welcome to our luxury city apartment! Our vacation rental offers the perfect blend of relaxation and urban excitement. With two spacious bedrooms, our apartment can comfortably accommodate up to four guests. The open-plan living area features comfortable seating, a large TV, and large windows that provide stunning views of the city. The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the city. Book your stay at our luxury city apartment today and experience the best that the city has to offer!",
+      "<div><p>Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement.</p> <p>With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake.</p> <p>The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake.</p> <p>Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!</p></div>",
     tags: [
       "city",
       "luxury",
@@ -177,7 +187,7 @@ export let listings = [
     rating: 4,
     desc: "Escape to this private villa with a pool located in the heart of Tuscany. Enjoy stunning views and easy access to nearby vineyards and historic towns.",
     longDesc:
-      "Welcome to our private villa with a pool in the heart of Tuscany! Our vacation rental offers the perfect blend of relaxation and adventure. With four spacious bedrooms, our villa can comfortably accommodate up to eight guests. The open-plan living area features comfortable seating, a large TV, and large windows that provide stunning views of the countryside. The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the countryside. Book your stay at our private villa with a pool today and experience the best that Tuscany has to offer!",
+      "<div><p>Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement.</p> <p>With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake.</p> <p>The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake.</p> <p>Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!</p></div>",
     tags: ["Tuscany", "villa", "pool", "smoking"],
     posAttr: ["Tuscany", "villa", "pool", "smoking"],
     negAttr: ["kids"],
@@ -192,7 +202,7 @@ export let listings = [
     rating: 3,
     desc: "Escape to this rustic lakefront cabin located in the heart of the Adirondack Mountains. Enjoy stunning views and easy access to nearby hiking trails and fishing spots.",
     longDesc:
-      "Welcome to our rustic lakefront cabin in the heart of the Adirondack Mountains! Our vacation rental offers the perfect blend of relaxation and adventure. With two bedrooms and a loft, our cabin can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake. The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake. Book your stay at our rustic lakefront cabin today and experience the best that the Adirondack Mountains have to offer!",
+      "<div><p>Welcome to our beautiful beach house in the heart of Chicago! Located just steps away from the picturesque Lake Michigan, our vacation rental offers the perfect blend of relaxation and urban excitement.</p> <p>With three spacious bedrooms, our beach house can comfortably accommodate up to six guests. The open-plan living area features a cozy fireplace, comfortable seating, and large windows that provide stunning views of the lake.</p> <p>The fully equipped kitchen is perfect for preparing delicious meals using fresh local ingredients. Enjoy your meals at the dining table while taking in the breathtaking views of the lake.</p> <p>Book your stay at our beautiful beach house today and experience the best that Chicago has to offer!</p></div>",
     tags: [
       "adirondack",
       "mountains",

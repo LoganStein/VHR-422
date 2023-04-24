@@ -9,11 +9,11 @@ function Contact(props) {
       >
         X
       </span>
-      <div>
-        Email*
-        <input></input>
+      <div className="email-container">
+        <span>Email*</span>
+        <input placeholder="Email" name="email" required></input>
       </div>
-      <textarea rows={10} cols={80}></textarea>
+      <textarea rows={30}></textarea>
       <button
         onClick={() => {
           props.setShowContact(false);
