@@ -6,7 +6,6 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-// TODO: add content
 function Footer() {
   return (
     <div className="footer">
