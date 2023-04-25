@@ -18,7 +18,7 @@ function SignIn(props) {
           For faster more convient checkout
         </span>
         <span className="textLight">
-          Don't have an account? <a href="#">Sign Up</a>
+          {/* Don't have an account? <a>Sign Up</a> */}
         </span>
       </div>
       <div className="signIn__form-container">
@@ -30,15 +30,15 @@ function SignIn(props) {
           <label htmlFor="password">Password</label>
           <input name="password" type="password" />
         </div>
-        <div className="signIn__remember-pass">
+        {/* <div className="signIn__remember-pass">
           <div className="signIn__remember-pair">
             <input type="checkbox" name="remember" />
             <label id="remember" forhtml="remeber">
               Remember Me
             </label>
           </div>
-          <a href="#">Forgot your password?</a>
-        </div>
+          <a>Forgot your password?</a>
+        </div> */}
         <button
           onClick={() => {
             props.setShowSignIn(false);

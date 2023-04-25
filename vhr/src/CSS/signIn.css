@@ -10,6 +10,7 @@
 a {
   text-decoration: none;
   color: #1e98d7;
+  cursor: pointer;
 }
 
 .signIn__exit {
@@ -107,8 +108,11 @@ a {
 .signIn__container .signIn__form-container .signIn__remember-pass a {
   font-size: 0.75rem;
 }
-.signIn__container .signIn__form-container .signIn__remember-pass .signIn__remember-pair {
+.signIn__container
+  .signIn__form-container
+  .signIn__remember-pass
+  .signIn__remember-pair {
   display: flex;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=signIn.css.map */
+} /*# sourceMappingURL=signIn.css.map */

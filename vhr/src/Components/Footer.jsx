@@ -9,12 +9,7 @@ import {
 function Footer() {
   return (
     <div className="footer">
-      <div className="footer__links">
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-        <a href="#">FAQ</a>
-      </div>
-      <div className="footer__social">
+      {/* <div className="footer__social">
         <a href="#">
           <FontAwesomeIcon icon={faFacebook} />
         </a>
@@ -24,7 +19,7 @@ function Footer() {
         <a href="#">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
-      </div>
+      </div> */}
       <div className="footer__copy">
         <span>&copy; 2023 Group 13. All rights reserved.</span>
       </div>

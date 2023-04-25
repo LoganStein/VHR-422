@@ -13,16 +13,23 @@ function SearchResults() {
   const [filters, setfilters] = useState(
     info.filters.map((filter) => filter.toLowerCase())
   );
+  const [houseType, setHouseType] = useState("");
   // console.log(filters);
 
   // handle checkbox filter changes
   const handleFilterChange = (e) => {
+    // console.log(e.target.name == "type");
     const filter = e.target.value;
     if (e.target.checked) {
       setfilters([...filters, filter]);
     } else {
       setfilters(filters.filter((f) => f !== filter));
     }
+  };
+
+  const handleHouseChange = (e) => {
+    const house = e.target.value;
+    setHouseType(house);
   };
 
   // If search terms aren't provided create an empty array
@@ -43,8 +50,11 @@ function SearchResults() {
       const filterMatch = filters.every((filter) =>
         listing.tags.includes(filter.toLowerCase())
       );
+      // check if house type matches
+      listing.tags.push("");
+      const houseMatch = listing.tags.includes(houseType.toLowerCase());
       // Return true if there is a search match and filter match
-      return searchMatch && filterMatch;
+      return searchMatch && filterMatch && houseMatch;
     })
     .map((listing) => {
       return <ListingCard info={listing} />;
@@ -60,21 +70,22 @@ function SearchResults() {
     <>
       <Header />
       <div className="container">
-        <div className="dev ad-container"></div>
+        <div className="dev ad-container">Ad goes here</div>
         <Search />
         <div className="searchResult__map-filter-container">
           <div
             className="searchResult__map"
             style={{ backgroundImage: `url(${map})` }}
           ></div>
-          <div className="dev searchResult__filters">
+          <div className="searchResult__filters">
             <label forhtml="price">Price</label>
             <select name="price">
               <option value={"H2L"}>High to Low</option>
               <option value={"L2H"}>Low to High</option>
             </select>
             <label forhtml="type">House Type</label>
-            <select name="type">
+            <select onChange={handleHouseChange} name="type">
+              <option value="">--Select house type--</option>
               <option value="Cabin">Cabin</option>
               <option value="Town House">Town House</option>
               <option value="Hotel">Hotel</option>

@@ -50,3 +50,13 @@ The assets used such as images are in `Assets/images` however in production thes
 - [Vacation Home Rents](https://vacationhomerents.com)
 - [Dalle2](https://openai.com/product/dall-e-2)
 - [Bing Image Creator](https://www.bing.com/images/create?FORM=GDPGLP)
+
+## Contributors
+
+Only Logan Stein
+
+![contributors](./src/Assets/images/contributors.png)
+
+![lines of code](./src/Assets/images/linesOfCode.png)
+
+I am also the only one who worked on the demo script.
